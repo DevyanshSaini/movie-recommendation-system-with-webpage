@@ -60,12 +60,8 @@ def recommendGET(movieTitle):
     if recommendation is None:
         return recommendation
     else:
+        
         recommendation.rename(columns={0: 'tconst', 1: 'title'}, inplace=True)
         recommendation.reset_index(drop=True, inplace=True)
-        #tconst (string) - alphanumeric unique identifier of the title.
-        recommendation['urls'] = [title_id for title_id in recommendation['tconst']]
-        return recommendation.drop('tconst', axis=1)
-
-
-def get_movie_data():
-    return listTitle
+        return recommendation.drop('tconst',axis=1)
+        

@@ -1,19 +1,23 @@
 <html>
+    
     <title>
         recommendation system
     </title>
     <center>
-    <body>
-        <form method="POST" , action="{{url_for('home')}}">
-            Enter movie :<input type="text" name="name" placeholder="enter movie name"><br>
-            <input type="submit" name="submit">
+        
+    <body bgcolor="#ffeb99" style="font-family:verdana" style="font-size:20px">
+        
+        <form method="POST" , action="{{url_for('home')}}"  >
+            Enter movie : <input type="text" name="name" placeholder="enter movie name"><br><br>
+            <input type="submit" name="submit"><br><br>
 
         </form>
-        {{ data }}
+        {{ data}}
         
 
 
         
     </body>
     </center>
+    
 </html>

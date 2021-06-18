@@ -1,4 +1,5 @@
 #importing our model
+
 import recommendSystem as model
 
 
@@ -10,5 +11,5 @@ class recommendTextManager:
 
 def pas(tex):
     text = model.recommendGET(tex)
-    return text['title']  
+    return text['title'].values  
 
