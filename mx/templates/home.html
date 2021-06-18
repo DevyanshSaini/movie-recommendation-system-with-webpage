@@ -12,7 +12,16 @@
             <input type="submit" name="submit"><br><br>
 
         </form>
-        {{ data}}
+        <table>
+            
+                {%for i in range(data|length)%}
+                <tr>
+                    <td>{{data[i]}}</td>
+                </tr>
+                {%endfor%}
+            
+        </table>
+        
         
 
 
